@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/include
 
-C_FLAGS =  -fsanitize=address -std=c99
+C_FLAGS = -std=c99
 

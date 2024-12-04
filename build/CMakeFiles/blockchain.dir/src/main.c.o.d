@@ -1,5 +1,4 @@
 CMakeFiles/blockchain.dir/src/main.c.o: \
-  /usr/lib/llvm-18/lib/clang/18/share/asan_ignorelist.txt \
   /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/src/main.c \
   /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/include/blockchain.h \
   /usr/include/openssl/evp.h /usr/include/openssl/macros.h \
