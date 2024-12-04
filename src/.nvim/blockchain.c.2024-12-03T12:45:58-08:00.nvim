@@ -1,0 +1,19 @@
+#include "blockchain.h"
+
+int bc_init(struct blockchain *bc,
+            unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
+  struct block new_block;
+  new_block.core.index = bc->count;
+  new_block.timestamp = ;
+  new_block.data = ;
+  new_block.p_hash =;
+  new_block.nonce =;
+
+  return 0;
+}
+
+int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
+  return 0;
+}
+
+int bc_verify(struct blockchain *bc) { return 0; }

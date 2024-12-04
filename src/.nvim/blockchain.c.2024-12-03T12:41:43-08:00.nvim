@@ -1,0 +1,13 @@
+#include "blockchain.h"
+
+int bc_init(struct blockchain *bc,
+            unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
+  bc = malloc(sizeof(struct block) * BLOCKCHAIN_SIZE);
+  return 0;
+}
+
+int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
+  return 0;
+}
+
+int bc_verify(struct blockchain *bc) { return 0; }

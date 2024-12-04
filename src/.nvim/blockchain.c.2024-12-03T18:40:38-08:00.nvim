@@ -1,0 +1,19 @@
+#include "blockchain.h"
+#include <stdio.h>
+#include <time.h>
+
+#define _DEFAULT_SOURCE
+#define _POSIX_C_SOURCE 199309L
+
+
+int bc_init(struct blockchain *bc,
+            unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
+  if
+    return 0;
+}
+
+int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
+  return 0;
+}
+
+int bc_verify(struct blockchain *bc) { return 0; }

@@ -1,0 +1,10 @@
+{"version": 2, "width": 130, "height": 40, "timestamp": 1733279991, "idle_time_limit": 5.0, "env": {"SHELL": "/usr/bin/zsh", "TERM": "xterm-256color"}}
+[0.260147, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                 \r \r"]
+[0.266389, "o", "\u001b]2;cmpt201@088eb6f02f20:~/units/04-long-assignments/a12-MarikaScrepnek\u0007\u001b]1;..arikaScrepnek\u0007"]
+[0.274293, "o", "\u001b]7;file://088eb6f02f20/home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek\u001b\\"]
+[0.332641, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[35m[recording] \u001b[34m~/units/04-long-assignments/a12-MarikaScrepnek\u001b[32m❯\u001b[39m \u001b[K"]
+[0.332987, "o", "\u001b[?1h\u001b=\u001b[?2004h"]
+[0.93919, "i", "n"]
+[0.942694, "o", "n"]
+[0.948756, "o", "\b\u001b[1m\u001b[31mn\u001b[0m\u001b[39m"]
+[0.949246, "o", "\b\u001b[1m\u001b[31mn\u001b[0m\u001b[39m\u001b[92mvim blockchain.c\u001b[39m\u001b[16D"]

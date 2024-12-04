@@ -1,0 +1,50 @@
+#include "blockchain.h"
+#include <openssl/sha.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#define _POSIX_C_SOURCE 199309L
+
+bool diff;
+
+unsigned char *get_hash(struct block *block) {
+
+}
+
+int bc_init(struct blockchain *bc,
+            unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
+  // check if difficulty or not
+  if (difficulty == NULL) {
+    diff = false;
+  } else {
+    diff = true;
+    memcpy(bc->difficulty, difficulty, SHA256_DIGEST_LENGTH);
+  }
+
+  return 0;
+}
+
+int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
+  struct block new_block;
+  // assign index
+  new_block.core.index = bc->count;
+  // assign timestamp
+  if (clock_gettime(CLOCK_REALTIME, &new_block.core.timestamp) == -1) {
+    perror("clock_gettime()");
+    return -1;
+  }
+  // assign data
+  memcpy(new_block.core.data, data, DATA_SIZE);
+  // assign previous hash (0 if index 0)
+  if (new_block.core.index == 0) {
+    memset(new_block.core.p_hash, 0, SHA256_DIGEST_LENGTH);
+  } else {
+  }
+
+  bc->count++;
+  return 0;
+}
+
+int bc_verify(struct blockchain *bc) { return 0; }
