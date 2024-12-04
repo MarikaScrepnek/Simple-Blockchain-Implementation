@@ -1,6 +1,6 @@
-CMakeFiles/blockchain.dir/src/blockchain.c.o: \
+CMakeFiles/blockchain.dir/src/main.c.o: \
   /usr/lib/llvm-18/lib/clang/18/share/asan_ignorelist.txt \
-  /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/src/blockchain.c \
+  /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/src/main.c \
   /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/include/blockchain.h \
   /usr/include/openssl/evp.h /usr/include/openssl/macros.h \
   /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
@@ -38,12 +38,6 @@ CMakeFiles/blockchain.dir/src/blockchain.c.o: \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/openssl/types.h \
   /usr/lib/llvm-18/lib/clang/18/include/limits.h /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/openssl/e_os2.h \
   /usr/lib/llvm-18/lib/clang/18/include/inttypes.h \
   /usr/include/inttypes.h /usr/lib/llvm-18/lib/clang/18/include/stdint.h \
@@ -64,15 +58,13 @@ CMakeFiles/blockchain.dir/src/blockchain.c.o: \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/openssl/cryptoerr.h \
+  /usr/include/openssl/cryptoerr_legacy.h /usr/include/pthread.h \
+  /usr/include/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/openssl/cryptoerr.h \
-  /usr/include/openssl/cryptoerr_legacy.h /usr/include/pthread.h \
-  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -90,4 +82,9 @@ CMakeFiles/blockchain.dir/src/blockchain.c.o: \
   /usr/include/openssl/obj_mac.h /usr/include/openssl/asn1.h \
   /usr/include/openssl/asn1err.h /usr/include/openssl/objectserr.h \
   /usr/include/openssl/sha.h \
-  /usr/lib/llvm-18/lib/clang/18/include/stdbool.h /usr/include/string.h
+  /home/cmpt201/units/04-long-assignments/a12-MarikaScrepnek/include/check.h \
+  /usr/include/openssl/err.h /usr/include/openssl/lhash.h \
+  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+  /usr/include/string.h

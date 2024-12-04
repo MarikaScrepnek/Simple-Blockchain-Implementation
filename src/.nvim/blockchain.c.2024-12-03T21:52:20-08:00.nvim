@@ -19,7 +19,6 @@ static void get_hash(const struct block_core *core, unsigned char *hash) {
 
 int bc_init(struct blockchain *bc,
             unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
-  bc->count = 0;
   // check if difficulty or not
   if (difficulty == NULL) {
     diff = false;

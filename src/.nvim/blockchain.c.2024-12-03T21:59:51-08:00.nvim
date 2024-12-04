@@ -32,7 +32,7 @@ int bc_init(struct blockchain *bc,
 }
 
 int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
-  struct block *new_block = &bc->blocks[bc->count];
+  struct block* new_block = &bc->blocks[bc->count];
   // assign index
   new_block->core.index = bc->count;
   // assign timestamp

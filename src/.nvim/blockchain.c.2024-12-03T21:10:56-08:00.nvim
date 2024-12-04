@@ -19,6 +19,7 @@ static void get_hash(const struct block_core *core, unsigned char *hash) {
 
 int bc_init(struct blockchain *bc,
             unsigned char difficulty[SHA256_DIGEST_LENGTH]) {
+  memset(bc->blocks, 0, sizeof(bc->blocks));
   bc->count = 0;
   // check if difficulty or not
   if (difficulty == NULL) {
@@ -36,32 +37,32 @@ int bc_add_block(struct blockchain *bc, const unsigned char data[DATA_SIZE]) {
   // assign index
   new_block->core.index = bc->count;
   // assign timestamp
-  if (clock_gettime(CLOCK_REALTIME, &new_block->core.timestamp) == -1) {
+  if (clock_gettime(CLOCK_REALTIME, &new_block.core.timestamp) == -1) {
     perror("clock_gettime()");
     return -1;
   }
   // assign data
-  memcpy(new_block->core.data, data, DATA_SIZE);
+  memcpy(new_block.core.data, data, DATA_SIZE);
   // assign previous hash (0 if index 0)
-  if (new_block->core.index == 0) {
-    memset(new_block->core.p_hash, 0, SHA256_DIGEST_LENGTH);
+  if (new_block.core.index == 0) {
+    memset(new_block.core.p_hash, 0, SHA256_DIGEST_LENGTH);
   } else {
-    memcpy(new_block->core.p_hash, bc->blocks[bc->count - 1].hash,
+    memcpy(new_block.core.p_hash, bc->blocks[bc->count - 1].hash,
            SHA256_DIGEST_LENGTH);
   }
   // find current hash and nonce (if necessary)
-  new_block->core.nonce = 0;
+  new_block.core.nonce = 0;
   unsigned char hash[SHA256_DIGEST_LENGTH];
   if (diff == false) {
-    get_hash(&new_block->core, hash);
+    get_hash(&new_block.core, hash);
   } else {
-    get_hash(&new_block->core, hash);
+    get_hash(&new_block.core, hash);
     while (memcmp(hash, bc->difficulty, SHA256_DIGEST_LENGTH) > 0) {
-      new_block->core.nonce++;
-      get_hash(&new_block->core, hash);
+      new_block.core.nonce++;
+      get_hash(&new_block.core, hash);
     }
   }
-  memcpy(new_block->hash, hash, SHA256_DIGEST_LENGTH);
+  memcpy(new_block.hash, hash, SHA256_DIGEST_LENGTH);
 
   bc->count++;
   return 0;
