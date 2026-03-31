@@ -17,35 +17,28 @@
 - **Libraries:** OpenSSL (`libcrypto`), platform-specific test libraries  
 
 ## Project Structure
+
+```
 src/       # Source code
-
 include/   # Header files
-
 lib/       # Libraries for testing
-
 CMakeLists.txt  # Build configuration
-
+```
 
 ## Getting Started
-git clone https://github.com/yourusername/simple-blockchain.git
-
+```bash
+git clone https://github.com/marikascrepnek/simple-blockchain.git
 cd simple-blockchain
-
 mkdir build && cd build
-
 cmake ..
-
 make
-
 ./blockchain
+```
 
 ## Skills Demonstrated
+
 - Implementing blockchain data structures in C
-
 - Writing proof-of-work logic and nonce calculation
-
 - Using cryptographic hashing for data integrity
-
 - Building and linking C projects with external libraries
-
 - Debugging memory and synchronization issues
